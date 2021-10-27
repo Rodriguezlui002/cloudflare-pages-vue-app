@@ -1,5 +1,5 @@
 <template>
-  <div class="min-w-full w-screen min-h-full h-screen flex flex-col justify-center items-center pt-10 mb-10">
+  <div class="flex flex-col justify-center items-center pt-10 mb-10">
     <div v-if="showModal" @click="clearErrors" class="w-full h-full absolute flex justify-center items-center inset-0 bg-gray-500 bg-opacity-60">
       <div class="w-96 py-10 rounded-lg text-center bg-gray-100 border-2 border-red-500">
         <span v-for="error in errorMessage" :key="error.ID">
